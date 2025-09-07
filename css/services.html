@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laundry Wallah</title>
+</head>
+<body style="display: flex; flex-direction: column; align-items: center; font-family: Arial, sans-serif;">
+
+  <section id="pricelist" style="text-align: center;">
+    <h2 style="margin-bottom: 1%">Available Services</h2>
+    <table style="width: 100%; background-color: #2963a98f; border-collapse: collapse;" border="1" cellpadding="7">
+      <caption><b>Our Prices</b></caption>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Price (per item)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Washing</td><td>$5</td></tr>
+        <tr><td>Dry Cleaning</td><td>$10</td></tr>
+        <tr><td>Ironing</td><td>$3</td></tr>
+        <tr><td>Folding</td><td>$2</td></tr>
+        <tr><td>Pickup & Delivery</td><td>$7</td></tr>
+        <tr><td>Stain Removal</td><td>$8</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <form style="margin-top: 20px; text-align: center;">
+    <label><b>Choose your services:</b></label><br><br>
+    
+    <input type="checkbox" id="washing" value="washing"><label for="washing"> Washing</label>
+    <input type="checkbox" id="dry_cleaning" value="dry_cleaning"><label for="dry_cleaning"> Dry Cleaning</label>
+    <input type="checkbox" id="ironing" value="ironing"><label for="ironing"> Ironing</label>
+    <input type="checkbox" id="pickup_delivery" value="pickup_delivery"><label for="pickup_delivery"> Pickup Delivery</label>
+    <input type="checkbox" id="folding" value="folding"><label for="folding"> Folding</label>
+    <input type="checkbox" id="stain_removal" value="stain_removal"><label for="stain_removal"> Stain Removal</label>
+    
+    <br><br>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" placeholder="1" required
+           style="margin-top: 10px; font-size: 16px; background-color: white; border: 1px solid black; border-radius: 8px; cursor: pointer;">
+    
+    <section style="text-align: left; width: fit-content; margin: auto;">
+        <h3>Payment Method</h3>
+        <input type="radio" id="credit_card" name="paymentoption" value="credit_card"><label for="credit_card"> Credit Card</label><br>
+        <input type="radio" id="debit_card" name="paymentoption" value="debit_card"><label for="debit_card"> Debit Card</label><br>
+        <input type="radio" id="cash_on_delivery" name="paymentoption" value="cash_on_delivery"><label for="cash_on_delivery"> Cash on Delivery</label><br>
+        <input type="radio" id="upi" name="paymentoption" value="upi"><label for="upi"> UPI</label><br>
+        <input type="radio" id="net_banking" name="paymentoption" value="net_banking"><label for="net_banking"> Net Banking</label><br><br>
+    </section>
+    
+    <input type="submit" value="Place an Order"
+           style="margin-top: 10px; padding: 10px 20px; font-size: 16px; background-color: #2963a9c7; color: white; border: none; border-radius: 12px; cursor: pointer;">
+  </form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="align-items: center;">
+    <section id="pricelist">
+      <h2 align="center" style="margin-bottom: 1%">Available services</h2>
+      <table
+        style="width: 50%; background-color: #2963a98f"
+        border="1",
+        cellspacing="0",
+        cellpadding="7",
+        align="center"
+      >
+        <caption>
+          <b>Our Prices</b>
+        </caption>
+        <thead align="left">
+          <tr>
+            <th>Service</th>
+            <th>Price(per item)</th>
+          </tr>
+        </thead>
+        <tbody align="left">
+          <tr>
+            <td>Washing</td>
+            <td>$5</td>
+          </tr>
+          <tr>
+            <td>Dry Cleaning</td>
+            <td>$10</td>
+          </tr>
+          <tr>
+            <td>Ironing</td>
+            <td>$3</td>
+          </tr>
+          <tr>
+            <td>Folding</td>
+            <td>$2</td>
+          </tr>
+          <tr>
+            <td>Pickup & Delivery</td>
+            <td>$7</td>
+          </tr>
+          <tr>
+            <td>Stain Removal</td>
+            <td>$8</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <br />
+    <label for="service">Choose your services:</label><br />
+    <input
+      type="checkbox"
+      name="washing"
+      id="washing"
+      value="washing"
+    />
+    <label for="washing">Washing</label>
+    <input
+      type="checkbox"
+      name="dry_cleaning"
+      id="dry_cleaning"
+      value="dry_cleaning"
+    />
+    <label for="dry_cleaning">Dry Cleaning</label>
+    <input 
+      type="checkbox"
+      name="ironing"
+      id="ironing"
+      value="ironing"
+    />
+    <label for="ironing">Ironing</label>
+    <input
+      type="checkbox"
+      name="pickup_delivery"
+      id="pickup_delivery"
+      value="pickup_delivery"
+    />
+    <label for="pickup_delivery">Pickup Delivery</label>
+    <input 
+      type="checkbox"
+      name="Folding"
+      id="Folding"
+      value="Folding"
+    />
+    <label for="Folding">Folding</label>
+    <input 
+      type="checkbox"
+      name="stain_removal"
+      id="stain_removal"
+      value="stain_removal"
+    />
+    <label for="stain_removal">Stain Removal</label>
+
+    <br />
+    <label for="quantity">Quantity:</label>
+    <input
+      type="number"
+      id="quantity"
+      name="quantity"
+      min="1"
+      placeholder="1"
+      value="quantity"
+      required
+      style="
+        margin-top: 10px;
+        font-size: 16px;
+        background-color: white;
+        border: 1;
+        border-radius: 5cm;
+        cursor: pointer;
+      "
+    />
+    <h3 for="paymentoption">Payment method</h3>
+    <input
+      type="radio"
+      name="paymentoption"
+      id="credit_card"
+      value="credit_card"
+    />
+    <label for="credit_card">Credit Card</label>
+    <br><input
+      type="radio"
+      name="paymentoption"
+      id="debit_card"
+      value="debit_card"
+    />
+    <label for="debit_card">Debit Card</label>
+    <br><input
+      type="radio"
+      name="paymentoption"
+      id="cash_on_delivery"
+      value="cash_on_delivery"
+    />
+    <label for="cash_on_delivery">Cash on Delivery</label>
+    <br><input 
+      type="radio"
+      name="paymentoption"
+      id="upi"
+      value="upi"
+    />
+    <label for="upi">UPI</label>
+    <br><input
+      type="radio"
+      name="paymentoption"
+      id="net_banking"
+      value="net_banking"
+    />
+    <label for="net_banking">Net Banking</label>
+    <br><input
+      type="submit"
+      style="
+        align-items: center;
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #2963a9c7;
+        color: rgb(255, 255, 255);
+        border: 1;
+        border-radius: 12px;
+        cursor: pointer;
+      "
+      value="Place an Order"
+    />
+    <br />
+  </body>
+</html> -->
