@@ -1,0 +1,17 @@
+@media only screen and (max-width:1145) {
+    /* body{
+        font-size: ;
+    } */
+    .hero-text-box{
+        width: 80%;
+        padding: 0 2%;
+        text-align: center;
+    }
+    .hero-text-box h1{
+        font-size: 20px;
+    }
+    .row{
+        display: block;
+        padding: 20px;
+    }
+}

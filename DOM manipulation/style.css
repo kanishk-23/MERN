@@ -1,0 +1,29 @@
+.body{
+    margin: 0;
+    padding: 0;
+    background-color: #facdcd;
+    
+}
+.nav{
+    font-size:xx-large;
+    background-color: #00bfff;
+    padding: 6px;
+    text-align: center;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.box{
+    height:8em;
+    width: 8em;
+    border: 2px solid #000000a4;
+    margin: 20px;
+}
+.circle{
+    border-radius: 50%;
+}

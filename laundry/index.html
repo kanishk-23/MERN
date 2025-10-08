@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="widp=device-widp, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="vendors/css/node_modules/@csstools/normalize.css/normalize.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="gridcss/4cols.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Laundry Wallah!</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <div class="nav-bar-left">
+          <img
+            src="/images/laundry_logo.jpg"
+            alt="logo"
+            title="Laundry Wallah"
+          />
+        </div>
+        <div class="nav-bar-middle">
+          <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#more">About Us</a></li>
+            <li><a href="#footer">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="nav-bar-right">
+          <a href="#">Username</a>
+        </div>
+      </div>
+
+      <!-- Hero -->
+      <div class="hero" id="home">
+        <div class="hero-left">
+          <h1 class="first">Welcome to Laundry Wallah!👕</h1>
+          <h2 class="second">Fast & Reliable Laundry Service</h2>
+          <p class="third">
+            A trusted solution for hassle-free laundry, saving your time and
+            effort. From washing to folding, we handle your clothes with utmost
+            care.
+          </p>
+          <h3 class="fourth">FRESHNESS DELIVERED TO YOUR DOORSTEPS! 🚀</h3>
+          <button onclick="">Book a service today</button>
+        </div>
+        <div class="hero-right">
+          <img
+            data-aos="fade-in"
+            data-aos-duration="15000"
+            src="/images/laundry.jpg"
+            alt="Laundry Service"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- 
+    <section class="service">
+      <div class="block service-left">
+        <h2>Our Services</h2>
+        <div class="pricelist">
+          <div class="service-item" data-name="Washing" data-price="5">
+            <span class="service-name">Washing</span>
+            <span class="service-price">$5</span>
+            <button class="add-btn">+</button>
+          </div>
+          <div class="service-item" data-name="Dry Cleaning" data-price="10">
+            <span class="service-name">Dry Cleaning</span>
+            <span class="service-price">$10</span>
+            <button class="add-btn">+</button>
+          </div>
+          <div class="service-item" data-name="Ironing" data-price="3">
+            <span class="service-name"> Ironing</span>
+            <span class="service-price">$3</span>
+            <button class="add-btn">+</button>
+          </div>
+          <div class="service-item" data-name="Folding" data-price="2">
+            <span class="service-name"> Folding</span>
+            <span class="service-price">$2</span>
+            <button class="add-btn">+</button>
+          </div>
+          <div
+            class="service-item"
+            data-name="Pickup & Delivery"
+            data-price="7"
+          >
+            <span class="service-name"> Pickup & Delivery </span>
+            <span class="service-price">$7</span>
+            <button class="add-btn">+</button>
+          </div>
+          <div class="service-item" data-name="Stain Removal" data-price="8">
+            <span class="service-name">Stain Removal</span>
+            <span class="service-price">$8</span>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-right">
+        <div class="block added-list">
+          <h3>Services Added</h3>
+          <div></div>
+          <div class="total"><strong>Total Amount:</strong> ₹0.00</div>
+        </div>
+
+        <div class="block book-now">
+          <h3>Book Now</h3>
+          <div><input type="text" placeholder="Name" /></div>
+          <div>
+            <input type="email" placeholder="Email" />
+            <input type="tel" placeholder="98765-xxxxx" />
+          </div>
+          <div><button>BOOK NOW</button></div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="service" id="services">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="15000"
+        class="block service-left"
+      >
+        <h2>Our Services</h2>
+        <div class="pricelist">
+          <div class="service-item" data-name="Washing" data-price="5">
+            <span class="service-name">Washing </span>
+            <span class="service-price">$5</span>
+            <button class="add-btn">+</button>
+          </div>
+          <div class="service-item" data-name="Dry Cleaning" data-price="10">
+            <span class="service-name">Dry Cleaning</span>
+            <span class="service-price">$10</span>
+            <button class="add-btn">+</button>
+          </div>
+          <div class="service-item" data-name="Stain Removal" data-price="8">
+            <span class="service-name">Stain Removal</span>
+            <span class="service-price">$8</span>
+            <button class="add-btn">+</button>
+          </div>
+          <div class="service-item" data-name="Ironing" data-price="3">
+            <span class="service-name">Ironing</span>
+            <span class="service-price">$3</span>
+            <button class="add-btn">+</button>
+          </div>
+          <div class="service-item" data-name="Folding" data-price="2">
+            <span class="service-name">Folding</span>
+            <span class="service-price">$2</span>
+            <button class="add-btn">+</button>
+          </div>
+          <div class="service-item" data-name="Bleaching" data-price="8">
+            <span class="service-name">Bleaching</span>
+            <span class="service-price">$8</span>
+            <button class="add-btn">+</button>
+          </div>
+          <div
+            class="service-item"
+            data-name="Pickup & Delivery"
+            data-price="7"
+          >
+            <span class="service-name">Pickup & Delivery</span>
+            <span class="service-price">$7</span>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="service-right">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="15000"
+          class="block added-list"
+        >
+          <h3>Services Added</h3>
+          <div class="list-items"></div>
+          <div class="total"><strong>Total Amount:</strong> ₹0.00</div>
+        </div>
+
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="15000"
+          class="block book-now"
+        >
+          <div>
+            <h3>Book Now</h3>
+          </div>
+          <div class="form-row">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="tel" placeholder="98765-xxxxx" />
+          </div>
+          <div><button class="btn-primary">BOOK NOW</button></div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="const-footer"
+      id="achieve"
+      data-aos="fade-in"
+      data-aos-duration="4000"
+    >
+      <div>
+        <h1>Our Achievements</h1>
+      </div>
+
+      <div class="col span_1_of_3">
+        <h4>1234</h4>
+        <p>lorem ipsum</p>
+      </div>
+      <div class="col span_1_of_3">
+        <h4>1234</h4>
+        <p>lorem ipsum</p>
+      </div>
+      <div class="col span_1_of_3">
+        <h4>1234</h4>
+        <p>lorem ipsum</p>
+      </div>
+    </div>
+
+    <div class="more" id="more">
+      <div class="row">
+        <div class="col span_1_of_4">
+          <ion-icon></ion-icon>
+          <h3>something some</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            illum aspernatur unde odio, Cumque laborum quam ipsam.
+          </p>
+        </div>
+        <div class="col span_1_of_4">
+          <ion-icon></ion-icon>
+          <h3>something some</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            illum aspernatur unde odio, Cumque laborum quam ipsam.
+          </p>
+        </div>
+        <div class="col span_1_of_4">
+          <ion-icon></ion-icon>
+          <h3>something some</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            illum aspernatur unde odio, Cumque laborum quam ipsam.
+          </p>
+        </div>
+        <div class="col span_1_of_4">
+          <ion-icon></ion-icon>
+          <h3>something some</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            illum aspernatur unde odio, Cumque laborum quam ipsam.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe">
+      <div class="subscribe-text">
+        <h1>SUBSCRIBE to our newsletter</h1>
+      </div>
+      <div class="subscribe-form">
+        <form action="#">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <button class="subscribe-btn">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div
+        data-aos="fade-in"
+        data-aos-duration="15000"
+        class="footer"
+        id="footer"
+      >
+        <div class="col span_1_of_4">
+          <div class="info">
+            <img src="images/laundry_logo.jpg" />
+            <h4>ABOUT US</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </div>
+        </div>
+        <div class="col span_1_of_4">
+          <div class="imp-link">
+            <h4>Important Links</h4>
+            <ul>
+              <li><a href="#"> About us</a></li>
+              <li><a href="#"> Contact us</a></li>
+              <li><a href="#"> Privacy policy</a></li>
+              <li><a href="#"> Terms & Con.</a></li>
+              <li><a href="#"> Refund policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col span_1_of_4">
+          <div class="contact">
+            <h4>Contact us</h4>
+            <ul>
+              <li>laundrywallah@gmail.com</li>
+              <li>+91 90817 26354</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col span_1_of_4">
+          <div class="Socialmedia">
+            <h4>Follow Us</h4>
+            <ul class="medias">
+              <li><ion-icon name="logo-instagram"></ion-icon></li>
+              <li><ion-icon name="logo-twitter"></ion-icon></li>
+              <li><ion-icon name="logo-facebook"></ion-icon></li>
+              <li><ion-icon name="logo-youtube"></ion-icon></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <form>
+        <label><b>Choose your services:</b></label
+        ><br /><br />
+        <input type="checkbox" id="washing" value="washing" /><label
+          for="washing"
+        >
+          Washing</label
+        >
+        <input type="checkbox" id="dry_cleaning" value="dry_cleaning" /><label
+          for="dry_cleaning"
+        >
+          Dry Cleaning</label
+        >
+        <input type="checkbox" id="ironing" value="ironing" /><label
+          for="ironing"
+        >
+          Ironing</label
+        >
+        <input type="checkbox" id="pickup_delivery" value="pickup_delivery" />
+        <label for="pickup_delivery"> Pickup Delivery</label>
+        <input type="checkbox" id="folding" value="folding" /><label
+          for="folding"
+        >
+          Folding</label
+        >
+        <input type="checkbox" id="stain_removal" value="stain_removal" /><label
+          for="stain_removal"
+        >
+          Stain Removal</label
+        >
+        <br /><br />
+        <label for="quantity">Quantity:</label>
+        <input
+          type="number"
+          id="quantity"
+          name="quantity"
+          min="1"
+          placeholder="1"
+          required
+        />
+
+        <section>
+          <h3>Payment Mepod</h3>
+          <input
+            type="radio"
+            id="credit_card"
+            name="paymentoption"
+            value="credit_card"
+          />
+          <label for="credit_card"> Credit Card</label><br />
+          <input
+            type="radio"
+            id="debit_card"
+            name="paymentoption"
+            value="debit_card"
+          /><label for="debit_card"> Debit Card</label><br />
+          <input
+            type="radio"
+            id="cash_on_delivery"
+            name="paymentoption"
+            value="cash_on_delivery"
+          /><label for="cash_on_delivery"> Cash on Delivery</label><br />
+          <input type="radio" id="upi" name="paymentoption" value="upi" /><label
+            for="upi"
+          >
+            UPI</label
+          ><br />
+          <input
+            type="radio"
+            id="net_banking"
+            name="paymentoption"
+            value="net_banking"
+          /><label for="net_banking"> Net Banking</label><br /><br />
+        </section>
+
+        <button class="PaO" type="submit" value="Place an Order">
+          Place an Order
+        </button>
+      </form> -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/subscribe.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script>
+      (function () {
+        emailjs.init({
+          publicKey: "d141LD4Ila5rSLHr1",
+        });
+      })();
+    </script>
+  </body>
+</html>
