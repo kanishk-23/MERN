@@ -35,13 +35,11 @@ function addToCart(name, price, btn) {
     cart[name] = { name, price: parseFloat(price), quantity: 1 };
     // Change button text → Remove
     btn.textContent = "Remove";
-    btn.classList.add("remove-btn");
   } else {
     // Item already in cart → remove it
     delete cart[name];
     // Change button back → Add
     btn.textContent = "Add";
-    btn.classList.remove("remove-btn");
   }
   renderCart();
 }
@@ -69,7 +67,7 @@ function decreaseQty(name) {
   renderCart();
 }
 
-// Attach click event to all add and remove buttons
+// click event for all add and remove buttons
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".add-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -80,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Booking confirmation (unchanged)
+  // Booking confirmation
   document.querySelector(".btn-primary").addEventListener("click", () => {
     const name = document.querySelector(".book-now input[type='text']").value;
     const email = document.querySelector(".book-now input[type='email']").value;
@@ -98,13 +96,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const orders = [];
     let total = 0;
-        // Booking summary
         let summary = "<h3>Booking Summary:</h3><ul>\n\n";
     for (let key in cart) {
-      let item = cart[key];
-          // summary += `<li>${item.name} - ${item.quantity} x $${item.price} = $${(
-          //     item.price * item.quantity).toFixed(2)}</li>\n`;
-          // }                                                                    
+      let item = cart[key];                                   
       const itemTotal = item.price * item.quantity;
       total += itemTotal;
 
@@ -120,9 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const grandTotal = (total + shipping + tax).toFixed(2);
 
           const order_id = "ORD" + Date.now(); // simple unique ID
-        // summary += `\n</ul><p><strong>Total:</strong> $$ {document.querySelector(".total").innerText.split("$")[1]}</p>`;
-        // summary += `\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}`;
-        // alert(summary); // Show confirmation (you can later send this to backend)
         emailjs.send("service_ob9nda8", "template_4rhwd4l", {
             order_id: order_id,
             name: name,
