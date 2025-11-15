@@ -76,6 +76,8 @@ body{
 }
 .hero-right img{width:320px;height:220px;object-fit:cover;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.08)}
 
+
+
 /* Services / grid */
 .content{
   display:flex;

@@ -12,8 +12,9 @@ document.getElementById("greetBtn").addEventListener("click", function() {
 
 // Box colour functionality
 const boxes = document.getElementsByClassName("box");
+// console.log(boxes.);
 for (let i = 0; i < boxes.length; i++) {
     const box = boxes[i];
-    box.addEventListener("click", function() {
+    box.addEventListener("click", function(){
     this.style.backgroundColor = this.textContent});
 }
