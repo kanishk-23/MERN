@@ -1,0 +1,41 @@
+{
+    "books": [
+        {
+            "id": 101,
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "isbn": "978-0743273565",
+            "year": 1925,
+            "available": true,
+            "copies": 3
+        },
+        {
+            "id": 102,
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "isbn": "978-0061120084",
+            "year": 1960,
+            "available": true,
+            "copies": 2
+        },
+        {
+            "id": 103,
+            "title": "1984",
+            "author": "George Orwell",
+            "isbn": "978-0451524935",
+            "year": 1949,
+            "available": false,
+            "copies": 0
+        },
+        {
+            "id": 104,
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "isbn": "978-0141439518",
+            "year": 1813,
+            "available": true,
+            "copies": 4
+        }
+    ]
+}
+

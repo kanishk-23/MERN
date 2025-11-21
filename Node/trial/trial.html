@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white ">
+    <ul>
+        <li>Javascript</li>
+        <li>Python</li>
+    </ul>
+</body>
+<script>
+    function getall(){
+        const n = document.querySelectorAll("li");
+        console.log(Array.from(n)[0]);
+        /*  n.forEach(ns => console.log(ns.textContent));    */
+        
+    }
+    function addmore(lang){
+        const newele= document.createElement("li");
+        /*  newele.innerHTML= lang; */
+        newele.appendChild(document.createTextNode(lang));
+        document.querySelector("ul").appendChild(newele);
+    }
+    addmore("javascript");
+</script>
+</html>

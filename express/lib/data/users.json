@@ -1,0 +1,91 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john@example.com",
+            "phone": "555-0101",
+            "role": "member",
+            "membershipDate": "2023-01-15",
+            "isActive": true,
+            "issuedBooks": []
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "phone": "555-0102",
+            "role": "librarian",
+            "membershipDate": "2022-06-20",
+            "isActive": true,
+            "issuedBooks": []
+        },
+        {
+            "id": 3,
+            "name": "Bob Johnson",
+            "email": "bob@example.com",
+            "phone": "555-0103",
+            "role": "member",
+            "membershipDate": "2023-11-10",
+            "isActive": false,
+            "issuedBooks": []
+        },
+        {
+            "id": 4,
+            "name": "Alice Williams",
+            "email": "alice@example.com",
+            "phone": "555-0104",
+            "role": "member",
+            "membershipDate": "2023-03-22",
+            "isActive": true,
+            "issuedBooks": [
+            {
+                "bookId": 101,
+                "issueDate": "2024-01-10",
+                "dueDate": "2024-01-24",
+                "returnDate": "2024-01-20"
+            }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Charlie Brown",
+            "email": "charlie@example.com",
+            "phone": "555-0105",
+            "role": "member",
+            "membershipDate": "2023-05-18",
+            "isActive": true,
+            "issuedBooks": [
+            {
+                "bookId": 103,
+                "issueDate": "2024-01-05",
+                "dueDate": "2024-01-19",
+                "returnDate": null
+            }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Diana Prince",
+            "email": "diana@example.com",
+            "phone": "555-0106",
+            "role": "member",
+            "membershipDate": "2023-07-12",
+            "isActive": true,
+            "issuedBooks": [
+            {
+                "bookId": 102,
+                "issueDate": "2023-12-28",
+                "dueDate": "2024-01-11",
+                "returnDate": null
+            },
+            {
+                "bookId": 104,
+                "issueDate": "2024-01-08",
+                "dueDate": "2024-01-22",
+                "returnDate": "2024-01-21"
+            }
+            ]
+        }
+    ]
+}
