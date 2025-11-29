@@ -1,10 +1,15 @@
 const express =  require('express');
-
+const dotenv = require('dotenv');
+const DBconnection = require('./databaseconnection');
 const usersrouter = require("./routes/users");
 const booksrouter = require("./routes/books");
 
+dotenv.config();
+
 const app  = express();
 const port =2302;
+
+DBconnection();
 
 app.use(express.json());
 app.use('/users', usersrouter);
@@ -15,7 +20,6 @@ app.get("/", (req,res)=>{
         message:"Hello and welcome to library"
     })
 })
-
 
 app.listen(port,()=>{
     console.log(`http://localhost:${port}`);

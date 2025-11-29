@@ -94,7 +94,9 @@ function App() {
             </div>
           </div>
         </div>
+
         <Footer setColor={setColor} />
+        
       </div>
     </>
   );

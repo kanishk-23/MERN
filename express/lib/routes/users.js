@@ -85,7 +85,7 @@ router.put('/:Id',(req,res)=>{
       return res.status(400).json({message: 'Phone number should be of 10 digits.'})
     }
 
-    users[userIndex]={...users[userIndex],...updateData};
+    users[userIndex]={...users[userIndex], ...updateData};
     res.status(200).json({
         success: true,
         message: "User updated successfully",
